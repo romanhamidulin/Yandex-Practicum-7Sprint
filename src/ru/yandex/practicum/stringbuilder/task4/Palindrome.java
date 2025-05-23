@@ -1,0 +1,18 @@
+package ru.yandex.practicum.stringbuilder.task4;
+
+public class Palindrome {
+    public boolean isPalindromeLine(String str) {
+        StringBuilder builder = new StringBuilder(str.toLowerCase());
+        int index = 0;
+
+        while (index != -1) {
+            index = builder.indexOf(" ", index);
+            if (index != -1) {
+                builder.deleteCharAt(index);
+            }
+        }
+        StringBuilder reversed = new StringBuilder(builder);
+        reversed.reverse();
+        return builder.toString().equals(reversed.toString());
+    }
+}

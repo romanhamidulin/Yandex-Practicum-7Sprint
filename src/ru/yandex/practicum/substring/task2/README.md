@@ -1,0 +1,3 @@
+Задача 2 из 2
+
+Теперь вам нужно реализовать метод `<span class="code-inline__content">boolean endsWith(String initial, String other)</span>` — для поиска не по началу слова, а по окончанию. Метод должен возвращать `<span class="code-inline__content">true</span>`, если строка `<span class="code-inline__content">initial</span>` заканчивается на строку `<span class="code-inline__content">other</span>`, иначе `<span class="code-inline__content">false</span>`. Например, для сочетания «жираф» и «раф», результат должен быть `<span class="code-inline__content">true</span>`, так как строка «жираф» заканчивается на слово «раф», а вот для сочетания «кошка» и «каша» должно вернуться `<span class="code-inline__content">false</span>`.
